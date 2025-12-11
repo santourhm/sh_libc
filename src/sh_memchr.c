@@ -1,4 +1,4 @@
-#include "include/sh_libc.h"
+#include "../include/sh_libc.h"
 
 
 
@@ -9,7 +9,8 @@ void *sh_memchr(const void * s, int c, size_t n)
 
     while (n--)
     {
-        if(*p == uc) return p;
+        if (*p == uc)
+            return (void *)p; 
         p++;
     }
 

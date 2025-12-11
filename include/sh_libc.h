@@ -13,7 +13,10 @@ void *sh_memchr(const void * s, int c, size_t n);
 int sh_memcmp(const void * s1, const void * s2, 
                             size_t n);
 size_t sh_strlen(const char *s);
-
 size_t sh_strlcat(char *d, const char *s, size_t size);
+char *sh_strchr(const char *s, int c);
+size_t sh_strlcpy(char *dst, const char *src, size_t size);
+char *sh_strrchr(const char *s, int c);
+int sh_strncmp(const char * s1, const char * s2, size_t n);
 
 #endif 
